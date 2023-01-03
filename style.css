@@ -1,0 +1,340 @@
+* {
+    box-sizing: border-box; 
+    /* retira todo tamanho de "height" e "width" vindas por padrão do navegador. */
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --gray-color: #C4C4C4;
+    --blue-color: #0B498F;
+    --darkgray-color: #00000080;
+    --ice-color: #b4b4b40f;
+    --graylight-color: #C4C4C424;
+    --black-color: #000000;
+
+    font-size: 62.5%;
+    /* Ajustando as medidas para o projeto obter tamanho da fonte exata. */
+}
+
+body {
+    font-family: 'Poppins', sem serifa;
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 1.6rem;
+    /* Voltando o projeto para 16px de tamanho por padrão. */
+}
+
+/* GLOBAL */
+.container {
+    margin: 2.5rem;
+    /* Dá a margem para o projeto todo */
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--blue-color);
+    line-height: 3rem;
+}
+
+.description {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--darkgray-color);
+    line-height: 2.1rem;
+}
+
+.tag {
+    font-size: 1.8rem;
+    color: var(--gray-color);
+}
+
+/* responsividade global */
+@media (min-width:1200px) {
+    .container {
+        margin: 5rem;
+    }
+
+    .tag {
+        font-size: 2.4rem;
+    }
+
+    .title {
+        font-size: 3rem;
+        line-height: 4.5rem;
+    }
+
+    .description {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+    }
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 12rem;
+}
+
+.header__button {
+    border: 2px solid var(--blue-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--blue-color);
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* responsividade header */
+@media (min-width:1200px) {
+    .header__logo {
+        width: 18rem;
+    }
+
+    .header__button {
+        font-size: 1.4rem;
+        padding: 1.5rem 3.1rem;
+    }
+}
+
+/* PRESENTATION */
+.presentation {
+    text-align: center; 
+}
+
+.presentation__description {
+    margin-top: 1.8rem;
+    margin-bottom: 2.1rem;
+}
+
+.presentation__button { 
+    margin-top: 1.4rem;
+    background-color: var(--blue-color);
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 2rem 5rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+}
+
+.presentation__image {
+    margin-top: 4rem;
+    align-self: center;
+    width: 27rem;
+}
+
+/* responsividade presentation */
+@media (min-width:1200px) {
+    .presentation {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+
+    .presentation__container {
+        margin-top: 10rem;
+        text-align: left;
+    }
+
+    .presentation__description {
+        line-height: 3rem;
+    }
+
+    .presentation__button {
+        margin-top: 4rem;                                   
+        border-radius: 0.8rem;
+    }
+
+    .presentation__image {
+        width: 50rem;
+        height: 50rem;
+    }
+}
+
+/* ABOUT US */
+.aboutUS {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.aboutUS__title {
+    margin-top: 3.4rem;
+}
+
+.aboutUS__word {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.aboutUS__description {
+    margin-top: 3.4rem;
+    margin-bottom: 2rem;
+}
+
+.marks {
+    font-weight: bold;
+}
+
+.aboutUS__image {
+    margin-top: 5.4rem;
+    width: 27rem;
+}
+
+/* responsividade aboutUS */
+@media (min-width: 1200px) {
+    .aboutUS {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aboutUS__container {
+        margin-top: 8rem;
+        text-align: left;
+    }
+
+    .aboutUS__description {
+        margin-top: 2rem;
+        margin-right: 3rem;
+    }
+
+    .aboutUS__image {
+        width: 50rem;
+        height: 50rem;
+    }
+}
+
+/* SERVICES */
+.services {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.services__title {
+    margin-top: 2.5rem;
+    color: var(--black-color);
+}
+
+.services__options-image {
+    width: 6.7rem;
+}
+
+.services__options-title {
+    margin-top: 2.4rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* responsividade services */
+@media (min-width: 1200px) {
+    .services__container {
+        margin-top: 5rem;
+        column-count: 5;
+        column-gap: 3rem;
+    }
+
+    .services__options-image {
+        width: 10.3rem;
+        height: 10.5rem;
+    }
+}
+
+/* INFORMATION */
+.information {
+    margin-top: 11rem;
+    text-align: center;
+    background-color: var(--graylight-color);
+}
+
+.information__container {
+    margin-top: 11.7rem;
+    padding-top: 3.1rem;
+}
+
+.information__title {
+    margin-top: 0.7rem;
+    font-size: 1.8rem;
+}
+
+.information__button {
+    margin-top: 1.4rem;
+    font-size: 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+    background-color: var(--blue-color);
+    border-radius: 0.5rem;
+    padding: 1.4rem 2.2rem;
+    display: inline-block;
+}
+
+.informmation__image {
+    margin-top: 4.8rem;
+    margin-bottom: 3.1rem;
+    width: 27rem;
+}
+
+/* responsividade information */
+@media (min-width: 1200px) {
+    .information {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .information__container {
+        text-align: left;
+    }
+
+    .information__title {
+        margin-top: 2.7rem;
+        font-size: 3.6rem;
+    }
+
+    .information__button {
+        margin-top: 3.4rem;
+        font-size: 1.4rem;
+        padding: 2rem 5rem;
+        border-radius: 0.8rem;
+    }
+
+    .informmation__image {
+        margin: 0;
+        width: 43rem;
+        height: 49rem;
+    }
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 12rem;
+    text-align: center;
+}
+
+.footer__logo {
+    width: 10rem;
+}
+
+.footer__description {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        margin-top: 17.4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer__logo {
+        width: 20rem;
+    }
+
+    .footer__description {
+        margin-top: 4.5rem;
+        font-size: 2.4rem;
+    }
+}
