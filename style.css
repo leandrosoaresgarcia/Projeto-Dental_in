@@ -1,37 +1,99 @@
 * {
-    box-sizing: border-box; 
-    /* quando utilizar padding ou border, não aumentará o tamanho do meu box */
+    box-sizing: border-box;  /* quando utilizar padding ou border, não aumentará o tamanho do meu box */
 }
 
 :root {
+    font-size: 62.5%; /* Ajustando as medidas para o projeto obter tamanho da fonte exata. */
+
     --primary: #0B498F;
     --gray-100: #C4C4C4;
     --gray-200: #00000080;
     --black: #000000;
-    --white: #FFFFFF;    
+    --white: #FFFFFF;
     
-    --ice: #b4b4b40f;
-    --graylight: #C4C4C424;
-    
-    font-size: 62.5%;
-    /* Ajustando as medidas para o projeto obter tamanho da fonte exata. */
-
-    scroll-behavior: smooth; 
-    /* Corrigindo: -webkit-font-smoothing: antialiased; */
+    scroll-behavior: smooth; /* Corrigindo: -webkit-font-smoothing: antialiased; */
 }
 
 body {
+    font-size: 1.6rem; /* Voltando o projeto para 16px de tamanho por padrão. */
     font-family: 'Poppins', sans-serif;
-    -webkit-font-smoothing: antialiased;
-
-    font-size: 1.6rem;
-    /* Voltando o projeto para 16px de tamanho por padrão. */
 }
 
-/* GLOBAL */
+.header,
+.presentation,
+.about-us,
+.services,
+.information,
+.footer {
+    border: 2px solid red;
+    max-width: 120rem; /* limitando o conteúdo até 1200px  */
+    margin: 0 auto; /* centralizando o layout */
+    padding: 0 3rem; /* limitando todos os conteúdos nas laterais */
+}
+
+.about-us,
+.services,
+.information__container,
+.footer {
+    margin-top: 8rem;
+}
+
+.information__container {
+    background-color: var(--gray-100);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
 .container {
     margin: 2.5rem;
-    /* Dá a margem para o projeto todo */
+    
 }
 
 .title {
@@ -53,7 +115,7 @@ body {
     color: var(--gray-color);
 }
 
-/* responsividade global */
+
 @media (min-width:1200px) {
     .container {
         margin: 5rem;
@@ -74,7 +136,7 @@ body {
     }
 }
 
-/* HEADER */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -94,7 +156,7 @@ body {
     font-weight: 500;
 }
 
-/* responsividade header */
+
 @media (min-width:1200px) {
     .header__logo {
         width: 18rem;
@@ -106,7 +168,7 @@ body {
     }
 }
 
-/* PRESENTATION */
+
 .presentation {
     text-align: center; 
 }
@@ -134,7 +196,7 @@ body {
     width: 27rem;
 }
 
-/* responsividade presentation */
+
 @media (min-width:1200px) {
     .presentation {
         display: flex;
@@ -162,7 +224,7 @@ body {
     }
 }
 
-/* ABOUT US */
+
 .aboutUS {
     margin-top: 8rem;
     text-align: center;
@@ -191,7 +253,7 @@ body {
     width: 27rem;
 }
 
-/* responsividade aboutUS */
+
 @media (min-width: 1200px) {
     .aboutUS {
         display: flex;
@@ -214,7 +276,7 @@ body {
     }
 }
 
-/* SERVICES */
+
 .services {
     margin-top: 8rem;
     text-align: center;
@@ -235,7 +297,7 @@ body {
     font-weight: 500;
 }
 
-/* responsividade services */
+
 @media (min-width: 1200px) {
     .services__container {
         margin-top: 5rem;
@@ -249,7 +311,7 @@ body {
     }
 }
 
-/* INFORMATION */
+
 .information {
     margin-top: 11rem;
     text-align: center;
@@ -283,7 +345,7 @@ body {
     width: 27rem;
 }
 
-/* responsividade information */
+
 @media (min-width: 1200px) {
     .information {
         display: flex;
@@ -313,7 +375,7 @@ body {
     }
 }
 
-/* FOOTER */
+
 .footer {
     margin-top: 12rem;
     text-align: center;
@@ -342,3 +404,7 @@ body {
         font-size: 2.4rem;
     }
 }
+
+
+ */
+
