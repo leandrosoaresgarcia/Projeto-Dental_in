@@ -73,6 +73,9 @@ body {
 
 .presentation {
     margin-top: 6.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .presentation__container {
@@ -117,260 +120,136 @@ body {
     filter: brightness(1.2);
 }
 
-/*
-
-
-
-@media (min-width:1200px) {
-    .container {
-        margin: 5rem;
-    }
-
-    .tag {
-        font-size: 2.4rem;
-    }
-
-    .title {
-        font-size: 3rem;
-        line-height: 4.5rem;
-    }
-
-    .description {
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-    }
-}
-
-HEADER
-
-@media (min-width:1200px) {
-    .header__logo {
-        width: 18rem;
-    }
-
-    .header__button {
-        font-size: 1.4rem;
-        padding: 1.5rem 3.1rem;
-    }
-}
-
-PRESENTATION
-
 .presentation__image {
     margin-top: 4rem;
-    align-self: center;
-    width: 27rem;
+    max-width: 26.2rem;
 }
 
+/* ABOUT-US */
 
-@media (min-width:1200px) {
-    .presentation {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 0;
-    }
-
-    .presentation__container {
-        margin-top: 10rem;
-        text-align: left;
-    }
-
-    .presentation__description {
-        line-height: 3rem;
-    }
-
-    .presentation__button {
-        margin-top: 4rem;                                   
-        border-radius: 0.8rem;
-    }
-
-    .presentation__image {
-        width: 50rem;
-        height: 50rem;
-    }
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.about-us__tag {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--gray-100);
+    /* 
+    Toda tag <span> vem contido em um display: inline; ou seja uma caixinha fechada. 
+    Utilizamos display: block; para que a caixinha comporte-se como um bloco aberto.
+    */
+    display: block;
+    text-align: center;  /* Com o display: block; o text-align funciona */
+}
 
-.aboutUS {
-    margin-top: 8rem;
+.about-us__title {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
     text-align: center;
+    line-height: 3rem;
+    color: var(--primary);
 }
 
-.aboutUS__title {
-    margin-top: 3.4rem;
+.about-us__word {
+    color: var(--gray-100);
 }
 
-.aboutUS__word {
-    color: var(--gray-color);
-    font-weight: 500;
+.about-us__text {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    text-align: center;
+    color: var(--gray-200);
 }
 
-.aboutUS__description {
-    margin-top: 3.4rem;
-    margin-bottom: 2rem;
+.about-us__image {
+    margin-top: 5rem;
+    max-width: 27.4rem;
 }
 
-.marks {
-    font-weight: bold;
-}
+/* SERVICES */
 
-.aboutUS__image {
-    margin-top: 5.4rem;
-    width: 27rem;
-}
-
-
-@media (min-width: 1200px) {
-    .aboutUS {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .aboutUS__container {
-        margin-top: 8rem;
-        text-align: left;
-    }
-
-    .aboutUS__description {
-        margin-top: 2rem;
-        margin-right: 3rem;
-    }
-
-    .aboutUS__image {
-        width: 50rem;
-        height: 50rem;
-    }
-}
-
-
-.services {
-    margin-top: 8rem;
+.services__tag {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--gray-100);
+    display: block;
     text-align: center;
 }
 
 .services__title {
-    margin-top: 2.5rem;
-    color: var(--black-color);
-}
-
-.services__options-image {
-    width: 6.7rem;
-}
-
-.services__options-title {
-    margin-top: 2.4rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
-
-@media (min-width: 1200px) {
-    .services__container {
-        margin-top: 5rem;
-        column-count: 5;
-        column-gap: 3rem;
-    }
-
-    .services__options-image {
-        width: 10.3rem;
-        height: 10.5rem;
-    }
-}
-
-
-.information {
-    margin-top: 11rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
     text-align: center;
-    background-color: var(--graylight-color);
+    line-height: 3rem;
+    color: var(--black);
 }
+
+.services__itens {
+    margin-top: 4rem;
+}
+
+.services__itens-image {
+    display: block; /* Para tirar da caixinha fechada lembra? */
+    margin: 0 auto 2rem auto;
+    max-width: 6.6rem;
+}
+
+.services__itens-text {
+    display: block;
+    text-align: center;
+}
+
+/* INFORMATION */
 
 .information__container {
-    margin-top: 11.7rem;
-    padding-top: 3.1rem;
+    background-color: #c4c4c40F;
+    padding: 3rem 0;
 }
 
-.information__title {
-    margin-top: 0.7rem;
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information__tag {
+    display: block;
     font-size: 1.8rem;
+    color: var(--gray-100);
+}
+
+.information__text {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    color: var(--primary);
 }
 
 .information__button {
-    margin-top: 1.4rem;
-    font-size: 1rem;
-    color: var(--white-color);
+    display: block;
+    margin-top: 1.5rem;
     text-decoration: none;
-    background-color: var(--blue-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 13.5rem;
+    height: 3.8rem;
+    background-color: var(--primary);
+    color: var(--white);
     border-radius: 0.5rem;
-    padding: 1.4rem 2.2rem;
-    display: inline-block;
 }
 
 .informmation__image {
     margin-top: 4.8rem;
-    margin-bottom: 3.1rem;
-    width: 27rem;
+    max-width: 23.9rem;
 }
-
-
-@media (min-width: 1200px) {
-    .information {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .information__container {
-        text-align: left;
-    }
-
-    .information__title {
-        margin-top: 2.7rem;
-        font-size: 3.6rem;
-    }
-
-    .information__button {
-        margin-top: 3.4rem;
-        font-size: 1.4rem;
-        padding: 2rem 5rem;
-        border-radius: 0.8rem;
-    }
-
-    .informmation__image {
-        margin: 0;
-        width: 43rem;
-        height: 49rem;
-    }
-}
-
-
-.footer {
-    margin-top: 12rem;
-    text-align: center;
-}
-
-.footer__logo {
-    width: 10rem;
-}
-
-.footer__description {
-    font-size: 1.4rem;
-}
-
-@media (min-width: 1200px) {
-    .footer {
-        margin-top: 17.4rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .footer__logo {
-        width: 20rem;
-    }
-
-    .footer__description {
-        margin-top: 4.5rem;
-        font-size: 2.4rem;
-    }
-}
-
-
- */
 
