@@ -268,4 +268,6 @@ body {
 
 .footer__text {
     margin-top: 3.2rem;
+    font-size: 1.4rem;
+    color: var(--gray-200);
 }
