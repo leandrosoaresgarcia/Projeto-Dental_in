@@ -271,3 +271,197 @@ body {
     font-size: 1.4rem;
     color: var(--gray-200);
 }
+
+@media (min-width: 768px) {
+
+    /* presentation */
+    
+    .presentation {
+        flex-direction: row;
+    }
+
+    .presentation__container {
+        align-items: flex-start;
+        margin-right: 15rem;
+        
+    }
+
+    .presentation__title {
+        text-align: left;
+        font-size: 2rem;
+    }
+    
+    .presentation__text {
+        text-align: left;
+    }
+
+    .presentation__image {
+        margin-top: 0;
+    }
+
+    /* about-us */
+
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-us__container {
+        margin-right: 9.5rem;
+    }
+
+    .about-us__tag {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .about-us__title {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .about-us__text {
+        text-align: left;
+    }
+
+    .about-us__image {
+        margin-top: 0;
+    }
+
+    /* services */
+
+    .services__tag {
+        font-size: 2rem;
+    }
+
+    .services__title {
+        font-size: 2rem;
+    }
+
+    .services__container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .services__itens {
+        width: 100%;
+    }
+
+    /* information */
+
+    .information__container {
+        padding: 0;
+    }
+
+    .information {
+        flex-direction: row;
+    }
+
+    .information__tag {
+        font-size: 2rem;
+    }
+
+    .information__text {
+        font-size: 2rem;
+    }
+
+    .informmation__image {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* geral */
+
+    .about-us,
+    .services,
+    .information__container,
+    .footer {
+        margin-top: 15rem;
+    }
+
+    /* header */
+    
+    .header__logo {
+        width: 18rem;
+    }
+
+    .header__button {
+        width: 18.3rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+
+    /* presentation */
+
+    .presentation__image {
+        max-width: 42rem;
+    }
+
+    .presentation__title {
+        text-align: left;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    
+    .presentation__text {
+        text-align: left;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    /* about-us */
+
+    .about-us__container {
+        margin-right: 15rem;
+        
+    }
+
+    .about-us__tag {
+        font-size: 2.3rem;
+    }
+
+    .about-us__title {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .about-us__image {
+        max-width: 40rem;
+    }
+
+    /* servicos */
+
+    .services__tag {
+        font-size: 2.3rem;
+    }
+
+    .services__title {
+        font-size: 2.5rem;
+    }
+
+    /* information */
+
+    .information {
+        margin-right: 1rem;
+    }
+
+    .information__tag {
+        font-size: 2.3rem;
+    }
+
+    .information__text {
+        font-size: 2rem;
+    }
+
+    .informmation__image {
+        max-width: 43rem;
+    }
+
+    .information__button {
+        width: 18rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
+    }
+}
+
